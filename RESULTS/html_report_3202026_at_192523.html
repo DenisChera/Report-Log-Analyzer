@@ -1,0 +1,183 @@
+<html>
+    <head>
+        <title>
+            Test Report - MTS Application
+        </title>
+        <style type="text/css">
+
+        .test-result-table {
+
+            border: 2px solid black;
+            width: 1600px;
+        }
+
+        .test-result-table-header-cell {
+
+            border-bottom: 2px solid black;
+            background-color: silver;
+            height: 40px;
+        }
+
+        .test-result-step-command-cell {
+
+            border-bottom: 1px solid gray;
+            width: 100px;
+        }
+
+        .test-result-test-step-description-cell {
+
+            border-bottom: 1px solid gray;
+            width: 500px;
+        }
+
+        .test-case-description-cell {
+
+            border-bottom: 1px solid gray;
+            width: 900px;
+        }
+
+        .test-result-step-result-cell-ok {
+
+            border-bottom: 1px solid gray;
+            background-color: green;
+            width: 100px;
+        }
+
+        .test-result-step-result-cell-failure {
+
+            border-bottom: 1px solid gray;
+            background-color: red;
+            width: 100px;
+        }
+
+        .test-result-step-result-cell-not-performed {
+
+            border-bottom: 1px solid gray;
+            background-color: white;
+            width: 100px;
+        }
+
+        .test-result-describe-cell {
+            background-color: tan;
+            font-style: italic;
+            border-left: 500px solid white;
+        }
+
+        .test-cast-status-box-ok {
+            border: 1px solid black;
+            float: left;
+            margin-right: 10px;
+            width: 45px;
+            height: 25px;
+            background-color: green;
+        }
+
+        .table, th, tr {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+
+        .test-result-step-row{
+          height: 30px;
+        }
+        </style>
+    </head>
+    <body>
+        <h1 style="margin-bottom: 1cm; margin-top: 2cm" class="test-results-header">
+            Test Report - MTS Application
+        </h1>
+        <table class="test-result-table" cellspacing="1">
+            <thead>
+                <tr>
+                    <td class="test-result-table-header-cell">Test Case</td>
+                    <td class="test-result-table-header-cell">Test Step</td>
+                    <td class="test-result-table-header-cell">Description</td>
+                    <td class="test-result-table-header-cell">Result</td>
+                </tr>
+            </thead>
+
+            <tbody>
+<!--REPORT GENERATION STARTS HERE-->
+
+	<tr class="test-result-step-row">
+		<td class = "test-result-step-command-cell">		</td>
+		<td class = "test-result-test-step-description-cell">structure\base_testcase.py/setup_test		</td>
+		<td class = "test-case-description-cell"> The test fixture was successfully created!		</td>
+		<td class = "test-result-step-result-cell-ok">PASS		</td>
+	</tr>
+	<tr class="test-result-step-row">
+		<td class = "test-result-step-command-cell">		</td>
+		<td class = "test-result-test-step-description-cell">test_suites.validationon_tests/connect_mi_via_cmd		</td>
+		<td class = "test-case-description-cell"> Successfully executed.		</td>
+		<td class = "test-result-step-result-cell-ok">PASS		</td>
+	</tr>
+	<tr class="test-result-step-row">
+		<td class = "test-result-step-command-cell">		</td>
+		<td class = "test-result-test-step-description-cell">test_suites.validationon_tests/connect_mi_via_cmd		</td>
+		<td class = "test-case-description-cell"> Successfully executed.		</td>
+		<td class = "test-result-step-result-cell-ok">PASS		</td>
+	</tr>
+	<tr class="test-result-step-row">
+		<td class = "test-result-step-command-cell">		</td>
+		<td class = "test-result-test-step-description-cell">/		</td>
+		<td class = "test-case-description-cell"> with the MI: HTTPConnectionPool(host='169.254.166.139', port=8002): Max retries exceeded with url: /receive_message_from_pc?message=D:%5CPython312%5Cpython.exe%20D:%5Cmts-mats%5Crunner.py%20-dist%20x64%20-exe%20exe%20-tc%20test_suites.L3_DT_MTS_26_EthernetDevice_Online_TestSpec.EthernetDeviceTests.testcase_2476_packet_filter_based_on_src_ipaddress%20-next%200%20-ip%20169.254.166.139%20-dab%20D:%5CDataAnalysisBox-x64%20--deploy_nightly%20False (Caused by NewConnectionError("HTTPConnection(host='169.254.166.139', port=8002): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))		</td>
+		<td class = "test-result-step-result-cell-failure">FAIL		</td>
+	</tr>
+	<tr class="test-result-step-row">
+		<td class = "test-result-step-command-cell">		</td>
+		<td class = "test-result-test-step-description-cell">Traceback		</td>
+		<td class = "test-case-description-cell"> MI with HOSTNAME MI5-Refresh : 
+File "D:\mts-mats\test_suites\L3_DT_MTS_26_EthernetDevice_Online_TestSpec.py", line 3978, in testcase_2476_packet_filter_based_on_src_ipaddress
+    mi0.configure_network_adapter_ip(list_mtsconfig_ip, list_subnet_ip)
+  File "D:\mts-mats\mats_utils\MI.py", line 828, in configure_network_adapter_ip
+    for adapter_name, ip, subnet in zip(self.adapter_name, str_ip_address, str_subnet_mask):
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not iterable
+		</td>
+		<td class = "test-result-step-result-cell-failure">FAIL		</td>
+	</tr>
+	<tr class="test-result-step-row">
+		<td class = "test-result-step-command-cell">		</td>
+		<td class = "test-result-test-step-description-cell">/		</td>
+		<td class = "test-case-description-cell"> with the MI: HTTPConnectionPool(host='169.254.166.139', port=8002): Max retries exceeded with url: /receive_message_from_pc?message=D:%5CPython312%5Cpython.exe%20D:%5Cmts-mats%5Crunner.py%20-dist%20x64%20-exe%20exe%20-tc%20test_suites.L3_DT_MTS_26_EthernetDevice_Online_TestSpec.EthernetDeviceTests.testcase_2476_packet_filter_based_on_src_ipaddress%20-next%202%20-ip%20169.254.166.139%20-dab%20D:%5CDataAnalysisBox-x64%20--deploy_nightly%20False (Caused by NewConnectionError("HTTPConnection(host='169.254.166.139', port=8002): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))		</td>
+		<td class = "test-result-step-result-cell-failure">FAIL		</td>
+	</tr>
+	<tr class="test-result-step-row">
+		<td class = "test-result-step-command-cell">		</td>
+		<td class = "test-result-test-step-description-cell">Traceback		</td>
+		<td class = "test-case-description-cell"> MI with HOSTNAME MI5-Refresh : 
+File "D:\mts-mats\test_suites\L3_DT_MTS_26_EthernetDevice_Online_TestSpec.py", line 4289, in testcase_2476_packet_filter_based_on_src_ipaddress
+    pid = get_variable_from_storage("pid")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\mts-mats\mats_utils\Functions.py", line 610, in get_variable_from_storage
+    return get_all_stored_variables()[name]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+KeyError: 'pid'
+		</td>
+		<td class = "test-result-step-result-cell-failure">FAIL		</td>
+	</tr>
+	<tr class="test-result-step-row">
+		<td class = "test-result-step-command-cell">		</td>
+		<td class = "test-result-test-step-description-cell">structure\CANoE.py/stop_canoe		</td>
+		<td class = "test-case-description-cell"> Successfully executed.		</td>
+		<td class = "test-result-step-result-cell-ok">PASS		</td>
+	</tr>
+	<tr class="test-result-step-row">
+		<td class = "test-result-step-command-cell">		</td>
+		<td class = "test-result-test-step-description-cell">BaseTestCase/cleanup_test		</td>
+		<td class = "test-case-description-cell"> The test fixture was successfully removed!		</td>
+		<td class = "test-result-step-result-cell-ok">PASS		</td>
+	</tr>
+	<tr class="test-result-step-row">
+		<td class = "test-result-step-command-cell">		</td>
+		<td class = "test-result-test-step-description-cell">EthernetDeviceTests/testcase_2476_packet_filter_based_on_src_ipaddress		</td>
+		<td class = "test-case-description-cell"> : Test execution failed		</td>
+		<td class = "test-result-step-result-cell-failure">FAIL		</td>
+	</tr>
+
+
+<!--REPORT GENERATION ENDS HERE-->
+</tbody>
+        </table>
+    </body>
+</html>

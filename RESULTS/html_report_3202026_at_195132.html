@@ -1,0 +1,229 @@
+<html>
+    <head>
+        <title>
+            Test Report - MTS Application
+        </title>
+        <style type="text/css">
+
+        .test-result-table {
+
+            border: 2px solid black;
+            width: 1600px;
+        }
+
+        .test-result-table-header-cell {
+
+            border-bottom: 2px solid black;
+            background-color: silver;
+            height: 40px;
+        }
+
+        .test-result-step-command-cell {
+
+            border-bottom: 1px solid gray;
+            width: 100px;
+        }
+
+        .test-result-test-step-description-cell {
+
+            border-bottom: 1px solid gray;
+            width: 500px;
+        }
+
+        .test-case-description-cell {
+
+            border-bottom: 1px solid gray;
+            width: 900px;
+        }
+
+        .test-result-step-result-cell-ok {
+
+            border-bottom: 1px solid gray;
+            background-color: green;
+            width: 100px;
+        }
+
+        .test-result-step-result-cell-failure {
+
+            border-bottom: 1px solid gray;
+            background-color: red;
+            width: 100px;
+        }
+
+        .test-result-step-result-cell-not-performed {
+
+            border-bottom: 1px solid gray;
+            background-color: white;
+            width: 100px;
+        }
+
+        .test-result-describe-cell {
+            background-color: tan;
+            font-style: italic;
+            border-left: 500px solid white;
+        }
+
+        .test-cast-status-box-ok {
+            border: 1px solid black;
+            float: left;
+            margin-right: 10px;
+            width: 45px;
+            height: 25px;
+            background-color: green;
+        }
+
+        .table, th, tr {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+
+        .test-result-step-row{
+          height: 30px;
+        }
+        </style>
+    </head>
+    <body>
+        <h1 style="margin-bottom: 1cm; margin-top: 2cm" class="test-results-header">
+            Test Report - MTS Application
+        </h1>
+        <table class="test-result-table" cellspacing="1">
+            <thead>
+                <tr>
+                    <td class="test-result-table-header-cell">Test Case</td>
+                    <td class="test-result-table-header-cell">Test Step</td>
+                    <td class="test-result-table-header-cell">Description</td>
+                    <td class="test-result-table-header-cell">Result</td>
+                </tr>
+            </thead>
+
+            <tbody>
+<!--REPORT GENERATION STARTS HERE-->
+
+	<tr class="test-result-step-row">
+		<td class = "test-result-step-command-cell">		</td>
+		<td class = "test-result-test-step-description-cell">structure\base_testcase.py/setup_test		</td>
+		<td class = "test-case-description-cell"> The test fixture was successfully created!		</td>
+		<td class = "test-result-step-result-cell-ok">PASS		</td>
+	</tr>
+	<tr class="test-result-step-row">
+		<td class = "test-result-step-command-cell">		</td>
+		<td class = "test-result-test-step-description-cell">test_suites.validationon_tests/connect_mi_via_cmd		</td>
+		<td class = "test-case-description-cell"> Successfully executed.		</td>
+		<td class = "test-result-step-result-cell-ok">PASS		</td>
+	</tr>
+	<tr class="test-result-step-row">
+		<td class = "test-result-step-command-cell">		</td>
+		<td class = "test-result-test-step-description-cell">test_suites.validationon_tests/connect_mi_via_cmd		</td>
+		<td class = "test-case-description-cell"> Successfully executed.		</td>
+		<td class = "test-result-step-result-cell-ok">PASS		</td>
+	</tr>
+	<tr class="test-result-step-row">
+		<td class = "test-result-step-command-cell">		</td>
+		<td class = "test-result-test-step-description-cell">Traceback		</td>
+		<td class = "test-case-description-cell"> MI with HOSTNAME MI5-Refresh : 
+File "D:\mts-mats\test_suites\L3_DT_MTS_26_EthernetDevice_Online_TestSpec.py", line 5394, in testcase_1989_to_check_vlan_tagging
+    pid_1 = launch_ethernet_sender(mode="pcap", sender_interface=mi0.adapter_name[0], file=str_pcap_path )
+                                                                 ~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+		</td>
+		<td class = "test-result-step-result-cell-failure">FAIL		</td>
+	</tr>
+	<tr class="test-result-step-row">
+		<td class = "test-result-step-command-cell">		</td>
+		<td class = "test-result-test-step-description-cell">/		</td>
+		<td class = "test-case-description-cell"> with the MI: HTTPConnectionPool(host='169.254.166.139', port=8002): Max retries exceeded with url: /receive_message_from_pc?message=D:%5CPython312%5Cpython.exe%20D:%5Cmts-mats%5Crunner.py%20-dist%20x64%20-exe%20exe%20-tc%20test_suites.L3_DT_MTS_26_EthernetDevice_Online_TestSpec.EthernetDeviceTests.testcase_1989_to_check_vlan_tagging%20-next%201%20-ip%20169.254.166.139%20-dab%20D:%5CDataAnalysisBox-x64%20--deploy_nightly%20False (Caused by NewConnectionError("HTTPConnection(host='169.254.166.139', port=8002): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))		</td>
+		<td class = "test-result-step-result-cell-failure">FAIL		</td>
+	</tr>
+	<tr class="test-result-step-row">
+		<td class = "test-result-step-command-cell">		</td>
+		<td class = "test-result-test-step-description-cell">Traceback		</td>
+		<td class = "test-case-description-cell"> MI with HOSTNAME MI5-Refresh : 
+File "D:\mts-mats\test_suites\L3_DT_MTS_26_EthernetDevice_Online_TestSpec.py", line 5596, in testcase_1989_to_check_vlan_tagging
+    pid_1 = get_variable_from_storage("pid_1")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\mts-mats\mats_utils\Functions.py", line 610, in get_variable_from_storage
+    return get_all_stored_variables()[name]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+KeyError: 'pid_1'
+		</td>
+		<td class = "test-result-step-result-cell-failure">FAIL		</td>
+	</tr>
+	<tr class="test-result-step-row">
+		<td class = "test-result-step-command-cell">		</td>
+		<td class = "test-result-test-step-description-cell">BaseTestCase/cleanup_test		</td>
+		<td class = "test-case-description-cell"> The test fixture was successfully removed!		</td>
+		<td class = "test-result-step-result-cell-ok">PASS		</td>
+	</tr>
+	<tr class="test-result-step-row">
+		<td class = "test-result-step-command-cell">		</td>
+		<td class = "test-result-test-step-description-cell">structure\FileManager.py/get_xlog_files		</td>
+		<td class = "test-case-description-cell"> The xlog files were successfully extracted  using the Get-ChildItem -Path 'D:\DataAnalysisBox-x64\mts_measurement\log' -Filter *.xlog | Where-Object {$_.LastWriteTime -ge '2026-03-20 19:50:54'} | Select-Object -ExpandProperty FullName command in PowerShell.		</td>
+		<td class = "test-result-step-result-cell-ok">PASS		</td>
+	</tr>
+	<tr class="test-result-step-row">
+		<td class = "test-result-step-command-cell">		</td>
+		<td class = "test-result-test-step-description-cell">structure.FileManager/get_xlog_files		</td>
+		<td class = "test-case-description-cell"> Successfully executed.		</td>
+		<td class = "test-result-step-result-cell-ok">PASS		</td>
+	</tr>
+	<tr class="test-result-step-row">
+		<td class = "test-result-step-command-cell">		</td>
+		<td class = "test-result-test-step-description-cell">structure.FileManager/get_crashdump_files		</td>
+		<td class = "test-case-description-cell"> Successfully executed.		</td>
+		<td class = "test-result-step-result-cell-ok">PASS		</td>
+	</tr>
+	<tr class="test-result-step-row">
+		<td class = "test-result-step-command-cell">		</td>
+		<td class = "test-result-test-step-description-cell">structure\FileManager.py/get_windows_log_files		</td>
+		<td class = "test-case-description-cell"> The wevtutil qe Application /q:"* [System[TimeCreated[@SystemTime >= '2026-03-20T19:50:54'] and (Level=1 or Level=2 or Level=3)]]" /f:text > "D:\mts-mats\reporting\backend\platform_node\test_data\MI5 Refresh Extended~MTS 2.6 PI25-2 Hotfix 3 - runnn~2026-03-20~19-50-54\EthernetDeviceTests\testcase_1989_to_check_vlan_tagging\logs\WindowsApplicationLog_20032026_195131.txt" command was executed successfully.		</td>
+		<td class = "test-result-step-result-cell-ok">PASS		</td>
+	</tr>
+	<tr class="test-result-step-row">
+		<td class = "test-result-step-command-cell">		</td>
+		<td class = "test-result-test-step-description-cell">structure\FileManager.py/get_windows_log_files		</td>
+		<td class = "test-case-description-cell"> The  wevtutil qe System /q:"* [System[TimeCreated[@SystemTime >= '2026-03-20T19:50:54'] and (Level=1 or Level=2 or Level=3)]]" /f:text > "D:\mts-mats\reporting\backend\platform_node\test_data\MI5 Refresh Extended~MTS 2.6 PI25-2 Hotfix 3 - runnn~2026-03-20~19-50-54\EthernetDeviceTests\testcase_1989_to_check_vlan_tagging\logs\WindowsSystemLogs_20032026_195131.txt" command was executed successfully.		</td>
+		<td class = "test-result-step-result-cell-ok">PASS		</td>
+	</tr>
+	<tr class="test-result-step-row">
+		<td class = "test-result-step-command-cell">		</td>
+		<td class = "test-result-test-step-description-cell">structure\FileManager.py/get_windows_log_files		</td>
+		<td class = "test-case-description-cell"> Windows application logs were successfully generated at path D:\mts-mats\reporting\backend\platform_node\test_data\MI5 Refresh Extended~MTS 2.6 PI25-2 Hotfix 3 - runnn~2026-03-20~19-50-54\EthernetDeviceTests\testcase_1989_to_check_vlan_tagging\logs.		</td>
+		<td class = "test-result-step-result-cell-ok">PASS		</td>
+	</tr>
+	<tr class="test-result-step-row">
+		<td class = "test-result-step-command-cell">		</td>
+		<td class = "test-result-test-step-description-cell">structure\FileManager.py/get_windows_log_files		</td>
+		<td class = "test-case-description-cell"> Windows system logs were successfully generated at path D:\mts-mats\reporting\backend\platform_node\test_data\MI5 Refresh Extended~MTS 2.6 PI25-2 Hotfix 3 - runnn~2026-03-20~19-50-54\EthernetDeviceTests\testcase_1989_to_check_vlan_tagging\logs.		</td>
+		<td class = "test-result-step-result-cell-ok">PASS		</td>
+	</tr>
+	<tr class="test-result-step-row">
+		<td class = "test-result-step-command-cell">		</td>
+		<td class = "test-result-test-step-description-cell">structure.FileManager/get_windows_log_files		</td>
+		<td class = "test-case-description-cell"> Successfully executed.		</td>
+		<td class = "test-result-step-result-cell-ok">PASS		</td>
+	</tr>
+	<tr class="test-result-step-row">
+		<td class = "test-result-step-command-cell">		</td>
+		<td class = "test-result-test-step-description-cell">structure\FileManager.py/get_services_logs		</td>
+		<td class = "test-case-description-cell"> : Invalid file path. Please provide a valid file path for the services logs.		</td>
+		<td class = "test-result-step-result-cell-failure">FAIL		</td>
+	</tr>
+	<tr class="test-result-step-row">
+		<td class = "test-result-step-command-cell">		</td>
+		<td class = "test-result-test-step-description-cell">structure.FileManager/get_rrecs_generated_during_a_time_period		</td>
+		<td class = "test-case-description-cell"> Successfully executed.		</td>
+		<td class = "test-result-step-result-cell-ok">PASS		</td>
+	</tr>
+	<tr class="test-result-step-row">
+		<td class = "test-result-step-command-cell">		</td>
+		<td class = "test-result-test-step-description-cell">EthernetDeviceTests/testcase_1989_to_check_vlan_tagging		</td>
+		<td class = "test-case-description-cell"> : Test execution failed		</td>
+		<td class = "test-result-step-result-cell-failure">FAIL		</td>
+	</tr>
+
+
+<!--REPORT GENERATION ENDS HERE-->
+</tbody>
+        </table>
+    </body>
+</html>

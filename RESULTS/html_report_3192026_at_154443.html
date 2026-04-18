@@ -1,0 +1,138 @@
+<html>
+    <head>
+        <title>
+            Test Report - MTS Application
+        </title>
+        <style type="text/css">
+
+        .test-result-table {
+
+            border: 2px solid black;
+            width: 1600px;
+        }
+
+        .test-result-table-header-cell {
+
+            border-bottom: 2px solid black;
+            background-color: silver;
+            height: 40px;
+        }
+
+        .test-result-step-command-cell {
+
+            border-bottom: 1px solid gray;
+            width: 100px;
+        }
+
+        .test-result-test-step-description-cell {
+
+            border-bottom: 1px solid gray;
+            width: 500px;
+        }
+
+        .test-case-description-cell {
+
+            border-bottom: 1px solid gray;
+            width: 900px;
+        }
+
+        .test-result-step-result-cell-ok {
+
+            border-bottom: 1px solid gray;
+            background-color: green;
+            width: 100px;
+        }
+
+        .test-result-step-result-cell-failure {
+
+            border-bottom: 1px solid gray;
+            background-color: red;
+            width: 100px;
+        }
+
+        .test-result-step-result-cell-not-performed {
+
+            border-bottom: 1px solid gray;
+            background-color: white;
+            width: 100px;
+        }
+
+        .test-result-describe-cell {
+            background-color: tan;
+            font-style: italic;
+            border-left: 500px solid white;
+        }
+
+        .test-cast-status-box-ok {
+            border: 1px solid black;
+            float: left;
+            margin-right: 10px;
+            width: 45px;
+            height: 25px;
+            background-color: green;
+        }
+
+        .table, th, tr {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+
+        .test-result-step-row{
+          height: 30px;
+        }
+        </style>
+    </head>
+    <body>
+        <h1 style="margin-bottom: 1cm; margin-top: 2cm" class="test-results-header">
+            Test Report - MTS Application
+        </h1>
+        <table class="test-result-table" cellspacing="1">
+            <thead>
+                <tr>
+                    <td class="test-result-table-header-cell">Test Case</td>
+                    <td class="test-result-table-header-cell">Test Step</td>
+                    <td class="test-result-table-header-cell">Description</td>
+                    <td class="test-result-table-header-cell">Result</td>
+                </tr>
+            </thead>
+
+            <tbody>
+<!--REPORT GENERATION STARTS HERE-->
+
+	<tr class="test-result-step-row">
+		<td class = "test-result-step-command-cell">		</td>
+		<td class = "test-result-test-step-description-cell">structure\base_testcase.py/setup_test		</td>
+		<td class = "test-case-description-cell"> The test fixture was successfully created!		</td>
+		<td class = "test-result-step-result-cell-ok">PASS		</td>
+	</tr>
+	<tr class="test-result-step-row">
+		<td class = "test-result-step-command-cell">		</td>
+		<td class = "test-result-test-step-description-cell">mats_utils\PowerSupply.py/power_off_relay		</td>
+		<td class = "test-case-description-cell"> : There is no source <mats_utils.MI.MI object at 0x000001702DEDBC20> in the sensors mapping list		</td>
+		<td class = "test-result-step-result-cell-failure">FAIL		</td>
+	</tr>
+	<tr class="test-result-step-row">
+		<td class = "test-result-step-command-cell">		</td>
+		<td class = "test-result-test-step-description-cell">mats_utils.MI/send_mi_shutdown_message		</td>
+		<td class = "test-case-description-cell"> : Execution failed:TestStepFail('Test step failed, stopping testcase execution. Result is set to failed.')		</td>
+		<td class = "test-result-step-result-cell-failure">FAIL		</td>
+	</tr>
+	<tr class="test-result-step-row">
+		<td class = "test-result-step-command-cell">		</td>
+		<td class = "test-result-test-step-description-cell">BaseTestCase/cleanup_test		</td>
+		<td class = "test-case-description-cell"> The test fixture was successfully removed!		</td>
+		<td class = "test-result-step-result-cell-ok">PASS		</td>
+	</tr>
+	<tr class="test-result-step-row">
+		<td class = "test-result-step-command-cell">		</td>
+		<td class = "test-result-test-step-description-cell">L3_DT_MTS_26_AudioData_TestSpec/test_case_245_Missing_device_id_parameter_in_audio_configuration		</td>
+		<td class = "test-case-description-cell"> : Test execution failed		</td>
+		<td class = "test-result-step-result-cell-failure">FAIL		</td>
+	</tr>
+
+
+<!--REPORT GENERATION ENDS HERE-->
+</tbody>
+        </table>
+    </body>
+</html>

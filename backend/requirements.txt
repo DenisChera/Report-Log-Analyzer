@@ -1,0 +1,7 @@
+fastapi==0.115.*
+uvicorn[standard]==0.34.*
+pydantic-settings==2.*
+beautifulsoup4==4.*
+httpx==0.28.*
+python-multipart==0.0.*
+reportlab==4.*

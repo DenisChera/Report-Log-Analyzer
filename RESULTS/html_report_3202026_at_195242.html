@@ -1,0 +1,276 @@
+<html>
+    <head>
+        <title>
+            Test Report - MTS Application
+        </title>
+        <style type="text/css">
+
+        .test-result-table {
+
+            border: 2px solid black;
+            width: 1600px;
+        }
+
+        .test-result-table-header-cell {
+
+            border-bottom: 2px solid black;
+            background-color: silver;
+            height: 40px;
+        }
+
+        .test-result-step-command-cell {
+
+            border-bottom: 1px solid gray;
+            width: 100px;
+        }
+
+        .test-result-test-step-description-cell {
+
+            border-bottom: 1px solid gray;
+            width: 500px;
+        }
+
+        .test-case-description-cell {
+
+            border-bottom: 1px solid gray;
+            width: 900px;
+        }
+
+        .test-result-step-result-cell-ok {
+
+            border-bottom: 1px solid gray;
+            background-color: green;
+            width: 100px;
+        }
+
+        .test-result-step-result-cell-failure {
+
+            border-bottom: 1px solid gray;
+            background-color: red;
+            width: 100px;
+        }
+
+        .test-result-step-result-cell-not-performed {
+
+            border-bottom: 1px solid gray;
+            background-color: white;
+            width: 100px;
+        }
+
+        .test-result-describe-cell {
+            background-color: tan;
+            font-style: italic;
+            border-left: 500px solid white;
+        }
+
+        .test-cast-status-box-ok {
+            border: 1px solid black;
+            float: left;
+            margin-right: 10px;
+            width: 45px;
+            height: 25px;
+            background-color: green;
+        }
+
+        .table, th, tr {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+
+        .test-result-step-row{
+          height: 30px;
+        }
+        </style>
+    </head>
+    <body>
+        <h1 style="margin-bottom: 1cm; margin-top: 2cm" class="test-results-header">
+            Test Report - MTS Application
+        </h1>
+        <table class="test-result-table" cellspacing="1">
+            <thead>
+                <tr>
+                    <td class="test-result-table-header-cell">Test Case</td>
+                    <td class="test-result-table-header-cell">Test Step</td>
+                    <td class="test-result-table-header-cell">Description</td>
+                    <td class="test-result-table-header-cell">Result</td>
+                </tr>
+            </thead>
+
+            <tbody>
+<!--REPORT GENERATION STARTS HERE-->
+
+	<tr class="test-result-step-row">
+		<td class = "test-result-step-command-cell">		</td>
+		<td class = "test-result-test-step-description-cell">structure\base_testcase.py/setup_test		</td>
+		<td class = "test-case-description-cell"> The test fixture was successfully created!		</td>
+		<td class = "test-result-step-result-cell-ok">PASS		</td>
+	</tr>
+	<tr class="test-result-step-row">
+		<td class = "test-result-step-command-cell">		</td>
+		<td class = "test-result-test-step-description-cell">test_suites.validationon_tests/connect_mi_via_cmd		</td>
+		<td class = "test-case-description-cell"> Successfully executed.		</td>
+		<td class = "test-result-step-result-cell-ok">PASS		</td>
+	</tr>
+	<tr class="test-result-step-row">
+		<td class = "test-result-step-command-cell">		</td>
+		<td class = "test-result-test-step-description-cell">structure\CANoE.py/start_canoe		</td>
+		<td class = "test-case-description-cell"> Successfully executed.		</td>
+		<td class = "test-result-step-result-cell-ok">PASS		</td>
+	</tr>
+	<tr class="test-result-step-row">
+		<td class = "test-result-step-command-cell">		</td>
+		<td class = "test-result-test-step-description-cell">structure\CANoE.py/load_canoe_configuration		</td>
+		<td class = "test-case-description-cell"> Successfully executed.		</td>
+		<td class = "test-result-step-result-cell-ok">PASS		</td>
+	</tr>
+	<tr class="test-result-step-row">
+		<td class = "test-result-step-command-cell">		</td>
+		<td class = "test-result-test-step-description-cell">structure.CANoE/start_canoe_configuration		</td>
+		<td class = "test-case-description-cell"> Successfully executed.		</td>
+		<td class = "test-result-step-result-cell-ok">PASS		</td>
+	</tr>
+	<tr class="test-result-step-row">
+		<td class = "test-result-step-command-cell">		</td>
+		<td class = "test-result-test-step-description-cell">structure.MainWindow/launch_app		</td>
+		<td class = "test-case-description-cell"> Successfully executed.		</td>
+		<td class = "test-result-step-result-cell-ok">PASS		</td>
+	</tr>
+	<tr class="test-result-step-row">
+		<td class = "test-result-step-command-cell">		</td>
+		<td class = "test-result-test-step-description-cell">structure.MainWindow/close_system_compatibility_dialog		</td>
+		<td class = "test-case-description-cell"> : Execution failed:RuntimeError('There is no active desktop required for moving mouse cursor!\n')		</td>
+		<td class = "test-result-step-result-cell-failure">FAIL		</td>
+	</tr>
+	<tr class="test-result-step-row">
+		<td class = "test-result-step-command-cell">		</td>
+		<td class = "test-result-test-step-description-cell">Traceback		</td>
+		<td class = "test-case-description-cell"> MI with HOSTNAME MI5-Refresh : 
+File "D:\Python312\Lib\site-packages\pywinauto\mouse.py", line 59, in _set_cursor_pos
+    win32api.SetCursorPos(coords)
+pywintypes.error: (0, 'SetCursorPos', 'No error message is available')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\mts-mats\mats_utils\Functions.py", line 111, in inner
+    result = function(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\mts-mats\structure\MainWindow.py", line 768, in close_system_compatibility_dialog
+    wnd_system_compatibility.OK.click_input()
+  File "D:\Python312\Lib\site-packages\pywinauto\base_wrapper.py", line 774, in click_input
+    _perform_click_input(button, coords, double, button_down, button_up,
+  File "D:\Python312\Lib\site-packages\pywinauto\mouse.py", line 137, in _perform_click_input
+    _set_cursor_pos((coords[0], coords[1]))
+  File "D:\Python312\Lib\site-packages\pywinauto\mouse.py", line 62, in _set_cursor_pos
+    raise RuntimeError("There is no active desktop required for moving mouse cursor!\n")
+RuntimeError: There is no active desktop required for moving mouse cursor!
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\mts-mats\test_suites\L3_DT_MTS_26_EthernetDevice_Online_TestSpec.py", line 122, in testcase_2429
+    main_window.close_system_compatibility_dialog()
+  File "D:\mts-mats\mats_utils\Functions.py", line 125, in inner
+    raise TestStepFail from e
+mats_utils.TestStepFail.TestStepFail: Test step failed, stopping testcase execution. Result is set to failed.
+		</td>
+		<td class = "test-result-step-result-cell-failure">FAIL		</td>
+	</tr>
+	<tr class="test-result-step-row">
+		<td class = "test-result-step-command-cell">		</td>
+		<td class = "test-result-test-step-description-cell">structure.CANoE/stop_canoe_configuration		</td>
+		<td class = "test-case-description-cell"> Successfully executed.		</td>
+		<td class = "test-result-step-result-cell-ok">PASS		</td>
+	</tr>
+	<tr class="test-result-step-row">
+		<td class = "test-result-step-command-cell">		</td>
+		<td class = "test-result-test-step-description-cell">structure\CANoE.py/stop_canoe		</td>
+		<td class = "test-case-description-cell"> Successfully executed.		</td>
+		<td class = "test-result-step-result-cell-ok">PASS		</td>
+	</tr>
+	<tr class="test-result-step-row">
+		<td class = "test-result-step-command-cell">		</td>
+		<td class = "test-result-test-step-description-cell">structure\CANoE.py/stop_canoe		</td>
+		<td class = "test-case-description-cell"> Successfully executed.		</td>
+		<td class = "test-result-step-result-cell-ok">PASS		</td>
+	</tr>
+	<tr class="test-result-step-row">
+		<td class = "test-result-step-command-cell">		</td>
+		<td class = "test-result-test-step-description-cell">BaseTestCase/cleanup_test		</td>
+		<td class = "test-case-description-cell"> The test fixture was successfully removed!		</td>
+		<td class = "test-result-step-result-cell-ok">PASS		</td>
+	</tr>
+	<tr class="test-result-step-row">
+		<td class = "test-result-step-command-cell">		</td>
+		<td class = "test-result-test-step-description-cell">structure\FileManager.py/get_xlog_files		</td>
+		<td class = "test-case-description-cell"> The xlog files were successfully extracted  using the Get-ChildItem -Path 'D:\DataAnalysisBox-x64\mts_measurement\log' -Filter *.xlog | Where-Object {$_.LastWriteTime -ge '2026-03-20 19:51:32'} | Select-Object -ExpandProperty FullName command in PowerShell.		</td>
+		<td class = "test-result-step-result-cell-ok">PASS		</td>
+	</tr>
+	<tr class="test-result-step-row">
+		<td class = "test-result-step-command-cell">		</td>
+		<td class = "test-result-test-step-description-cell">structure.FileManager/get_xlog_files		</td>
+		<td class = "test-case-description-cell"> Successfully executed.		</td>
+		<td class = "test-result-step-result-cell-ok">PASS		</td>
+	</tr>
+	<tr class="test-result-step-row">
+		<td class = "test-result-step-command-cell">		</td>
+		<td class = "test-result-test-step-description-cell">structure.FileManager/get_crashdump_files		</td>
+		<td class = "test-case-description-cell"> Successfully executed.		</td>
+		<td class = "test-result-step-result-cell-ok">PASS		</td>
+	</tr>
+	<tr class="test-result-step-row">
+		<td class = "test-result-step-command-cell">		</td>
+		<td class = "test-result-test-step-description-cell">structure\FileManager.py/get_windows_log_files		</td>
+		<td class = "test-case-description-cell"> The wevtutil qe Application /q:"* [System[TimeCreated[@SystemTime >= '2026-03-20T19:51:32'] and (Level=1 or Level=2 or Level=3)]]" /f:text > "D:\mts-mats\reporting\backend\platform_node\test_data\MI5 Refresh Extended~MTS 2.6 PI25-2 Hotfix 3 - runnn~2026-03-20~19-50-54\EthernetDeviceTests\testcase_2429\logs\WindowsApplicationLog_20032026_195241.txt" command was executed successfully.		</td>
+		<td class = "test-result-step-result-cell-ok">PASS		</td>
+	</tr>
+	<tr class="test-result-step-row">
+		<td class = "test-result-step-command-cell">		</td>
+		<td class = "test-result-test-step-description-cell">structure\FileManager.py/get_windows_log_files		</td>
+		<td class = "test-case-description-cell"> The  wevtutil qe System /q:"* [System[TimeCreated[@SystemTime >= '2026-03-20T19:51:32'] and (Level=1 or Level=2 or Level=3)]]" /f:text > "D:\mts-mats\reporting\backend\platform_node\test_data\MI5 Refresh Extended~MTS 2.6 PI25-2 Hotfix 3 - runnn~2026-03-20~19-50-54\EthernetDeviceTests\testcase_2429\logs\WindowsSystemLogs_20032026_195241.txt" command was executed successfully.		</td>
+		<td class = "test-result-step-result-cell-ok">PASS		</td>
+	</tr>
+	<tr class="test-result-step-row">
+		<td class = "test-result-step-command-cell">		</td>
+		<td class = "test-result-test-step-description-cell">structure\FileManager.py/get_windows_log_files		</td>
+		<td class = "test-case-description-cell"> Windows application logs were successfully generated at path D:\mts-mats\reporting\backend\platform_node\test_data\MI5 Refresh Extended~MTS 2.6 PI25-2 Hotfix 3 - runnn~2026-03-20~19-50-54\EthernetDeviceTests\testcase_2429\logs.		</td>
+		<td class = "test-result-step-result-cell-ok">PASS		</td>
+	</tr>
+	<tr class="test-result-step-row">
+		<td class = "test-result-step-command-cell">		</td>
+		<td class = "test-result-test-step-description-cell">structure\FileManager.py/get_windows_log_files		</td>
+		<td class = "test-case-description-cell"> Windows system logs were successfully generated at path D:\mts-mats\reporting\backend\platform_node\test_data\MI5 Refresh Extended~MTS 2.6 PI25-2 Hotfix 3 - runnn~2026-03-20~19-50-54\EthernetDeviceTests\testcase_2429\logs.		</td>
+		<td class = "test-result-step-result-cell-ok">PASS		</td>
+	</tr>
+	<tr class="test-result-step-row">
+		<td class = "test-result-step-command-cell">		</td>
+		<td class = "test-result-test-step-description-cell">structure.FileManager/get_windows_log_files		</td>
+		<td class = "test-case-description-cell"> Successfully executed.		</td>
+		<td class = "test-result-step-result-cell-ok">PASS		</td>
+	</tr>
+	<tr class="test-result-step-row">
+		<td class = "test-result-step-command-cell">		</td>
+		<td class = "test-result-test-step-description-cell">structure\FileManager.py/get_services_logs		</td>
+		<td class = "test-case-description-cell"> : Invalid file path. Please provide a valid file path for the services logs.		</td>
+		<td class = "test-result-step-result-cell-failure">FAIL		</td>
+	</tr>
+	<tr class="test-result-step-row">
+		<td class = "test-result-step-command-cell">		</td>
+		<td class = "test-result-test-step-description-cell">structure.FileManager/get_rrecs_generated_during_a_time_period		</td>
+		<td class = "test-case-description-cell"> Successfully executed.		</td>
+		<td class = "test-result-step-result-cell-ok">PASS		</td>
+	</tr>
+	<tr class="test-result-step-row">
+		<td class = "test-result-step-command-cell">		</td>
+		<td class = "test-result-test-step-description-cell">EthernetDeviceTests/testcase_2429		</td>
+		<td class = "test-case-description-cell"> : Test execution failed		</td>
+		<td class = "test-result-step-result-cell-failure">FAIL		</td>
+	</tr>
+
+
+<!--REPORT GENERATION ENDS HERE-->
+</tbody>
+        </table>
+    </body>
+</html>
